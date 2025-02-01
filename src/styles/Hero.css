@@ -1,0 +1,78 @@
+.hero{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-height:860px;
+    flex-direction: column;
+}
+
+.hero-container {
+    width:97%;
+    height:800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    gap:10px;
+    /*background-image: url('../../public/images/leaf1.svg'), url('../../public/images/leaf2.svg');*/
+    /*background-position: 240px 0, 600px 630px;*/
+    /*background-size: 24%, 24%;*/
+    /*background-repeat: no-repeat;*/
+    background-image: url('../../public/images/landingpagebg.png');
+    background-size: 100%;
+    background-position: 0 -60px;
+
+}
+
+.orange {
+    background-color: #F1E7D8;
+}
+
+.grass {
+    background-color: #EEEEDA;
+}
+
+.hero-text {
+    padding-left: 60px;
+    max-width: 45%;
+}
+
+.hero-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 52px;
+    line-height: 78px;
+    color: #333;
+    font-weight: 600;
+}
+
+.hero-text span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 78px;
+}
+
+.text-orange {
+    color: #F9B24F;
+}
+
+.text-green {
+    color: #6B6B37;
+}
+
+.text-grass{
+    color: #3E9E02;
+}
+
+.hero-text p {
+    margin: 1rem 0;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,33 @@
+.explore-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 80px;
+    font-size:24px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 48px;
+    cursor: pointer;
+}
+
+.black {
+    background-color: #333;
+}
+
+.green {
+    background: linear-gradient(to bottom, #15390A, #356A14);
+}
+
+.explore-btn img {
+    width: 48px;
+    height: 48px;
+}
+
+.explore-btn:hover {
+    background-color: #5d7a26;
+}

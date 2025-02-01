@@ -1,0 +1,60 @@
+/* Carousel container styling */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    /*overflow-y: initial;*/
+    /*overflow-x: hidden;*/
+}
+.carousel-track{
+    display: flex;
+    transition: transform 1.5s ease; /* Smooth sliding animation */
+    width: 100%; /* Match parent container's width */
+}
+
+.carousel-slide {
+    max-width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 97%;
+}
+
+.carousel-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-button:hover {
+    background-color: rgba(217, 217, 217, 0.5);
+    border-radius: 50%;
+}
+
+.carousel-dots {
+    margin-top: 10px;
+}
+
+.carousel-dots .dot {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-dots .dot.active {
+    background-color: #4b5320;
+}
