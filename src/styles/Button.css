@@ -1,18 +1,20 @@
 .explore-btn {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    width: 300px;
+    gap: 0;
+    width: 80px;
     height: 80px;
-    font-size:24px;
-    font-family: 'Poppins', sans-serif;
-    padding: 10px 20px;
+    font-size: 0;
+    padding: 10px 30px;
     color: #fff;
     border: none;
     border-radius: 48px;
     cursor: pointer;
+    transition: width 0.3s ease-in-out, font-size 0.3s ease-in-out, background-color 0.3s ease-in-out, gap 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .black {
@@ -26,8 +28,19 @@
 .explore-btn img {
     width: 48px;
     height: 48px;
+    transition: transform 0.8s ease-in-out;
 }
 
 .explore-btn:hover {
+    width: 300px;
+    font-size: 21px;
     background-color: #5d7a26;
+    gap: 16px;
+    letter-spacing: 2px;
+    font-family: 'Teachers', sans-serif;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.explore-btn:hover img {
+    transform: rotate(360deg);
 }

@@ -1,28 +1,31 @@
+"use client";
 import React from "react";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import "@/styles/Navbar.css";
 
 const Navbar = () => {
-
-
-    const handleButton = (route) => {
-        //navigate(`/${route}`);
-    };
-
+    
     return (
         <nav className="navbar">
             <div className="logo">AGROCO</div>
-            {/*<div className="nav-links">*/}
-            {/*    <div onClick={()=>handleButton("")}>*/}
-            {/*        Home*/}
-            {/*    </div>*/}
-            {/*    <div onClick={()=>handleButton("product")}>*/}
-            {/*        Products*/}
-            {/*    </div>*/}
-            {/*    <div>*/}
-            {/*        <a href="/">About Us</a>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-            <input className="search-bar" type="text" placeholder="Search"/>
+            <div className="nav-links">
+                <div>
+                    <a href="/">Home</a>
+                </div>
+                <div>
+                    <a href="/">Products</a>
+                </div>
+                <div>
+                    <a href="/">About Us</a>
+                </div>
+            </div>
+            <div className="animation">
+                {/*<DotLottieReact*/}
+                {/*    src="/anim/leaves.lottie"*/}
+                {/*    loop*/}
+                {/*    autoplay*/}
+                {/*/>*/}
+            </div>
         </nav>
     );
 };

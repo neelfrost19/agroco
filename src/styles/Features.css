@@ -5,27 +5,30 @@
 
     h2 {
         text-align: center;
-        font-size: 48px;
+        font-size: 36px;
         line-height: 72px;
         color: #000000;
         margin-bottom: 2rem;
+        font-family: "Teachers", serif;
 
         span{
             color :#6B6B37;
+            font-family: "BiroScript", serif;
+            font-size: 48px;
         }
     }
 
     h3 {
+        font-family: "muktaMahee", serif;
         text-align: center;
         font-size: 28px;
         line-height:48px;
         color: #000000;
         margin-bottom: 4rem;
         font-weight: 400;
+        letter-spacing: 1px;
     }
 }
-
-
 
 .feature-list {
     display: flex;
@@ -34,24 +37,31 @@
 }
 
 .feature-item {
-    height: 152px;
+    /*height: 152px;*/
+    height: 250px;
     width: 61%;
     display: flex;
     align-items: center;
-    gap: 48px;
-    background-color: #DDE2D6;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /*gap: 48px;*/
+    /*background-color: #DDE2D6;*/
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+    transition: transform 0.5s ease-in-out;
 
     span {
-        width: 100px;
-        height: 100px;
-        background-color: #6B6B37;
-        border-radius: 50%;
+        width: 210px;
+        height: 156px;
+        background-image: url("../../public/images/number_bg.png");
+        background-repeat: no-repeat;
+        background-size: 156%;
+        background-position: -50px -36px;
+        padding-right: 40px;
+        padding-top: 80px;
 
-        p{
+        .feature-number{
+            font-family: "biroScriptPlus", serif;
             text-align: center;
-            color: #fff;
-            font-size: 48px;
+            color: white;
+            font-size: 90px;
             line-height: 0;
             font-weight: 600;
         }
@@ -61,35 +71,51 @@
         width: 852px;
 
         h4 {
-            font-size: 24px;
-            line-height: 32px;
-            font-weight: 600;
-            color: #6B6B37;
+            font-family: "Teachers", sans-serif;
+            font-size: 35px;
+            line-height: 29px;
+            font-weight: 300;
+            color: white;
+            letter-spacing: 5px;
             margin-bottom: 0;
         }
 
         p{
-            color: #000000;
-            font-size: 24px;
-            line-height: 32px;
-            font-weight: 400;
+            font-family: "muktaMahee", sans-serif;
+            color: white;
+            font-size: 17px;
+            line-height: 29px;
+            font-weight: 600;
+            letter-spacing: 5px;
             margin-top: 10px;
         }
     }
 }
 
+.feature-item:hover {
+    transform: scale(1.05);
+}
+
  .odd {
-     padding-right: 20px;
-     padding-left: 0;
+     /*padding-right: 20px;*/
+     /*padding-left: 0;*/
      flex-direction: row-reverse;
-     border-radius: 0 84px 84px 0;
+     /*border-radius: 0 84px 84px 0;*/
      align-self: flex-start;
+     background-image: url("../../public/images/feature_bg_left.png");
+     background-repeat: no-repeat;
+     background-position: 0 7px;
+     background-size: 103%;
 }
 
 .even {
-    padding-left: 20px;
-    padding-right: 0;
+    /*padding-left: 20px;*/
+    /*padding-right: 0;*/
     flex-direction: row;
-    border-radius: 84px 0 0 84px;
+    /*border-radius: 84px 0 0 84px;*/
     align-self: flex-end;
+    background-image: url("../../public/images/feature_bg_right.png");
+    background-repeat: no-repeat;
+    background-position: -26px -40px;
+    background-size: 107%;
 }

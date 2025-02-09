@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Teachers, Mukta_Mahee } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +11,28 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const teachers = Teachers({
+  weight: "700", // Adjust the weight as needed
+  subsets: ["latin"],
+});
+
+const muktaMahee = Mukta_Mahee({
+  subsets: ["latin"],
+  weight: "400",
+})
+
+const biroScript = localFont({
+  src: "./fonts/Biro_Script_reduced.otf",
+  variable: "--font-brio-script",
+  weight: "100 900",
+});
+
+const biroScriptPlus = localFont({
+  src: "./fonts/BiroScriptPlus.ttf",
+  variable: "--font-brio-script-plus",
+  weight: "100 900",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${biroScript.variable} ${teachers.className} ${muktaMahee.className} ${biroScriptPlus.variable}`}>
         {children}
       </body>
     </html>

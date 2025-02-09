@@ -30,13 +30,13 @@ const Features = () => {
 
     return (
         <section className="features">
-            <h2>Why <span>Choose Us?</span></h2>
+            <h2>Why <span>Choose Us</span> ?</h2>
             <h3>Our tea bags and boxes are designed for tea lovers who value quality, convenience, and sustainability without compromise.</h3>
             <div className="feature-list">
                 {features.map((feature) => (
                     <div key={feature.id} className= {`feature-item ${feature.id % 2 === 0 ? 'even' : 'odd'}`} >
                         <span>
-                            <p>{feature.id}</p>
+                            <p className="feature-number">{feature.id}</p>
                         </span>
                         <div>
                             <h4>{feature.title}</h4>
