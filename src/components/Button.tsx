@@ -1,7 +1,7 @@
-import Image from "next/image";
+
 import "@/styles/Button.css"
 
-const Button = (props) => {
+const Button = (props: {[key: string]: string}) => {
     const {text, color} = props;
 
     return (

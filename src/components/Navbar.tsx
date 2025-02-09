@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+// import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import "@/styles/Navbar.css";
+import Link from "next/link";
 
 const Navbar = () => {
     
@@ -10,13 +11,13 @@ const Navbar = () => {
             <div className="logo">AGROCO</div>
             <div className="nav-links">
                 <div>
-                    <a href="/">Home</a>
+                    <Link href="/">Home</Link>
                 </div>
                 <div>
-                    <a href="/">Products</a>
+                    <Link href="/">Products</Link>
                 </div>
                 <div>
-                    <a href="/">About Us</a>
+                    <Link href="/">About Us</Link>
                 </div>
             </div>
             <div className="animation">
